@@ -43,3 +43,16 @@ struct node* deleteNode(struct node* root, int key) {
   if it has no child or 1 child we remove that node and replace the node with child node
   if it has two childs we find the minimum value from the right subtree and then we delete it recursively
 */
+
+
+void delete_node(struct node * root,int val){
+    while(root!=NULL){
+        if(root->data>val){
+            root=root->right;
+        }else if(root->data<val){
+            root=root->left;
+        }
+        else{
+            if(root->left==NULL){
+                
+}
